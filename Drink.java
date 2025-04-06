@@ -1,7 +1,7 @@
 public class Drink {
-    private String name;
-    private double price;
-    private int volume;
+    private final String name;
+    private final double price;
+    private final int volume;
 
     public Drink(String name, double price, int volume) {
         this.name = name;
@@ -13,24 +13,12 @@ public class Drink {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public int getVolume() {
         return volume;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
     }
 
     @Override
@@ -42,4 +30,3 @@ public class Drink {
                 '}';
     }
 }
-
